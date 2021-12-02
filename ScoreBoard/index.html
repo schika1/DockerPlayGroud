@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Score Board</title>
+</head>
+<body>
+    <section class="section">
+        <div class="columns is-mobile">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://images.unsplash.com/photo-1548175429-b3b9d408afd1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <header class="card-header  is-capitalized">
+                        <h1 class="card-header-title is-size-3 has-text-centered">
+                          Welcome to Dice Score Board
+                        </h1>
+                        <button class="card-header-icon" aria-label="more options">
+                          <span class="icon">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                          </span>
+                        </button>
+                      </header>
+                    <div class="card-content">                  
+                      <div class="content ">
+                        <div class="is-size-4">
+                            <h1><span id="p1Score">0</span> - <span id="p2Score">0</span></h1>
+                        </div>
+                        <div>
+                            <p class="is-inline-block has-text-weight-bold">Select the playing limit from Dropdown &emsp;</p>
+                            <div class="select is-rounded">
+                                <select name="playTo" id="playTo" >
+                                <option value="3">&nbsp; 3 &nbsp; </option>
+                                <option value="4">&nbsp;  4 &nbsp; </option>
+                                <option value="5">&nbsp;  5 &nbsp; </option>
+                                <option value="6">&nbsp;  6 &nbsp; </option>
+                                <option value="7">&nbsp;  7 &nbsp; </option>
+                                <option value="8">&nbsp;  8 &nbsp; </option>
+                                <option value="9">&nbsp;  9 &nbsp; </option>
+                                <option value="10">&nbsp;  10 &nbsp; </option>
+                            </select>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Btn" class="card-footer-item button is-primary">+ Player 1</button>
+                        <button id="p2Btn" class="card-footer-item button is-info">+ Player 2</button>
+                        <button id="reset" class="card-footer-item button is-danger">Reset</button>
+                      </footer>
+                  </div>
+            </div>
+          </div>
+    </section>
+    
+    
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
